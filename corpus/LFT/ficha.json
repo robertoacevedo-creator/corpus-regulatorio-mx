@@ -1,0 +1,28 @@
+{
+ "clave": "LFT",
+ "nombre": "LEY FEDERAL DEL TRABAJO",
+ "tipo": "ley",
+ "ambito": "federal",
+ "fuente": {
+  "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+  "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LFT.doc",
+  "formato": "doc"
+ },
+ "publicacion_original_dof": "1970-04-01",
+ "ultima_reforma_dof": "2026-05-14",
+ "fecha_carga": "2026-11-27",
+ "original": {
+  "archivo": "LFT.doc",
+  "sha256": "0d6860c68de91de2e9f2410fcc54b296a262324c6a67da7ece5bba9865ffef43",
+  "bytes": 2778112
+ },
+ "convertidor": "diputados_doc",
+ "conteo": {
+  "articulos": 1266,
+  "renglones": 0,
+  "registros": 1279,
+  "derogados": 148,
+  "transitorios": 13,
+  "decretos": 32
+ }
+}

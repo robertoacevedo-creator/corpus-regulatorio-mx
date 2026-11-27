@@ -1,0 +1,28 @@
+{
+ "clave": "CFF",
+ "nombre": "CÓDIGO FISCAL DE LA FEDERACIÓN",
+ "tipo": "ley",
+ "ambito": "federal",
+ "fuente": {
+  "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+  "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/CFF.doc",
+  "formato": "doc"
+ },
+ "publicacion_original_dof": "1981-12-31",
+ "ultima_reforma_dof": "2026-04-09",
+ "fecha_carga": "2026-11-27",
+ "original": {
+  "archivo": "CFF.doc",
+  "sha256": "96e4133a2f5fbe7b40c4bc2526063a59745344b2045724a01df225ae28b9274a",
+  "bytes": 1847296
+ },
+ "convertidor": "diputados_doc",
+ "conteo": {
+  "articulos": 421,
+  "renglones": 0,
+  "registros": 432,
+  "derogados": 84,
+  "transitorios": 11,
+  "decretos": 76
+ }
+}

@@ -64,7 +64,7 @@ def fechas_dof(texto):
 
 def fecha_larga_a_iso(texto):
     """'22 de mayo de 2006' -> '2006-05-22'."""
-    m = re.search(r"(\d{1,2})o?\.?\s+de\s+([a-záéíóú]+)\s+(?:de|del)\s+(\d{4})", texto or "", re.I)
+    m = re.search(r"(\d{1,2})\s*[oº°]?\.?\s+de\s+([a-záéíóú]+)\s+(?:de|del)\s+(\d{4})", texto or "", re.I)
     if not m:
         return None
     mes = MESES.get(m.group(2).lower())

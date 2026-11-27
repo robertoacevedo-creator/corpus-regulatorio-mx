@@ -102,5 +102,31 @@ def main():
     print("Prueba de Diputados correcta.")
 
 
+def test_ningun_articulo_trae_encabezado_incrustado():
+    """Ninguna línea de texto (salvo la primera) arranca como Título/Capítulo/Libro ni como otro artículo."""
+    import json, re
+    from pathlib import Path
+    raiz = Path(__file__).resolve().parent.parent / "corpus"
+    patron = re.compile(r"^(?:T[ÍI]TULO|CAP[ÍI]TULO|LIBRO)\s+[IVXLC\d\wÁÉÍÓÚ]+\s*$|^ART[ÍI]CULO\s+\d+[\w .\-]*\.\s*-", re.I)
+    malos = []
+    for f in raiz.glob("*/articulos.jsonl"):
+        for linea in f.read_text(encoding="utf-8").splitlines():
+            a = json.loads(linea)
+            for t in a["texto"].split("\n")[1:]:
+                if patron.match(t.strip()):
+                    malos.append((f.parent.name, a["id"], t[:40]))
+    assert not malos, malos[:10]
+
+
+def main_corpus():
+    try:
+        test_ningun_articulo_trae_encabezado_incrustado()
+    except AssertionError as e:
+        print("ERROR encabezados incrustados:", e)
+        sys.exit(1)
+    print("Prueba de encabezados incrustados correcta.")
+
+
 if __name__ == "__main__":
     main()
+    main_corpus()

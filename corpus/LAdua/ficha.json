@@ -1,0 +1,28 @@
+{
+ "clave": "LAdua",
+ "nombre": "LEY ADUANERA",
+ "tipo": "ley",
+ "ambito": "federal",
+ "fuente": {
+  "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+  "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LAdua.doc",
+  "formato": "doc"
+ },
+ "publicacion_original_dof": "1995-12-15",
+ "ultima_reforma_dof": "2026-10-23",
+ "fecha_carga": "2026-11-27",
+ "original": {
+  "archivo": "LAdua.doc",
+  "sha256": "ce2f9954ec5d8e43638c513cc5ac449af1da224d2a67c5fa20075dcf441c125d",
+  "bytes": 1188864
+ },
+ "convertidor": "diputados_doc",
+ "conteo": {
+  "articulos": 277,
+  "renglones": 0,
+  "registros": 277,
+  "derogados": 16,
+  "transitorios": 0,
+  "decretos": 41
+ }
+}

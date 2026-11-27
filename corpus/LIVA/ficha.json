@@ -1,0 +1,28 @@
+{
+ "clave": "LIVA",
+ "nombre": "LEY DEL IMPUESTO AL VALOR AGREGADO",
+ "tipo": "ley",
+ "ambito": "federal",
+ "fuente": {
+  "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+  "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LIVA.doc",
+  "formato": "doc"
+ },
+ "publicacion_original_dof": "1978-12-29",
+ "ultima_reforma_dof": "2021-11-12",
+ "fecha_carga": "2026-11-27",
+ "original": {
+  "archivo": "LIVA.doc",
+  "sha256": "8c517be03c6a65d856f95e41f5b0094fe3537a00f65003b9f16d49bea3d12a18",
+  "bytes": 540160
+ },
+ "convertidor": "diputados_doc",
+ "conteo": {
+  "articulos": 80,
+  "renglones": 0,
+  "registros": 85,
+  "derogados": 15,
+  "transitorios": 5,
+  "decretos": 52
+ }
+}

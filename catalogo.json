@@ -1,7 +1,231 @@
 {
- "version": "v1.2",
+ "version": "2",
  "fecha": "2026-11-27",
  "normas": [
+  {
+   "clave": "CFF",
+   "nombre": "CÓDIGO FISCAL DE LA FEDERACIÓN",
+   "tipo": "ley",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/CFF.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "1981-12-31",
+   "ultima_reforma_dof": "2026-04-09",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "CFF.doc",
+    "sha256": "96e4133a2f5fbe7b40c4bc2526063a59745344b2045724a01df225ae28b9274a",
+    "bytes": 1847296
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 421,
+    "renglones": 0,
+    "registros": 432,
+    "derogados": 84,
+    "transitorios": 11,
+    "decretos": 76
+   }
+  },
+  {
+   "clave": "LAN",
+   "nombre": "LEY DE AGUAS NACIONALES",
+   "tipo": "ley",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LAN.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "1992-12-01",
+   "ultima_reforma_dof": "2025-12-11",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "LAN.doc",
+    "sha256": "89cffb9aa5addab411111b2876df5ede12cea7bfb79122688d55e9350b7a9157",
+    "bytes": 679424
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 215,
+    "renglones": 0,
+    "registros": 228,
+    "derogados": 21,
+    "transitorios": 13,
+    "decretos": 12
+   }
+  },
+  {
+   "clave": "LAdua",
+   "nombre": "LEY ADUANERA",
+   "tipo": "ley",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LAdua.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "1995-12-15",
+   "ultima_reforma_dof": "2026-10-23",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "LAdua.doc",
+    "sha256": "ce2f9954ec5d8e43638c513cc5ac449af1da224d2a67c5fa20075dcf441c125d",
+    "bytes": 1188864
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 277,
+    "renglones": 0,
+    "registros": 277,
+    "derogados": 16,
+    "transitorios": 0,
+    "decretos": 41
+   }
+  },
+  {
+   "clave": "LCE",
+   "nombre": "LEY DE COMERCIO EXTERIOR",
+   "tipo": "ley",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LCE.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "1993-07-27",
+   "ultima_reforma_dof": "2026-05-01",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "LCE.doc",
+    "sha256": "1cb224946819990ddf188e73d0ab7fbbda103e0b76b565a13dfeed37a54dfd33",
+    "bytes": 201216
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 109,
+    "renglones": 0,
+    "registros": 113,
+    "derogados": 1,
+    "transitorios": 4,
+    "decretos": 7
+   }
+  },
+  {
+   "clave": "LFCPQ",
+   "nombre": "LEY FEDERAL PARA EL CONTROL DE PRECURSORES QUÍMICOS, PRODUCTOS QUÍMICOS ESENCIALES Y MÁQUINAS PARA ELABORAR CÁPSULAS, TABLETAS Y/O COMPRIMIDOS",
+   "tipo": "ley",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LFCPQ.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "1997-12-26",
+   "ultima_reforma_dof": "2023-05-03",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "LFCPQ.doc",
+    "sha256": "bf0da6040c41f74e27315615f087c1ca6cfcea04c642a511a2e3140b969a6dd9",
+    "bytes": 157696
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 31,
+    "renglones": 0,
+    "registros": 35,
+    "derogados": 0,
+    "transitorios": 4,
+    "decretos": 9
+   }
+  },
+  {
+   "clave": "LFSA",
+   "nombre": "LEY FEDERAL DE SANIDAD ANIMAL",
+   "tipo": "ley",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LFSA.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "2007-07-25",
+   "ultima_reforma_dof": "2024-05-21",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "LFSA.doc",
+    "sha256": "ee1e815e94e745b563aa882d1c30af5db798837211267331a17a182bd43c4456",
+    "bytes": 372224
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 177,
+    "renglones": 0,
+    "registros": 187,
+    "derogados": 0,
+    "transitorios": 10,
+    "decretos": 4
+   }
+  },
+  {
+   "clave": "LFT",
+   "nombre": "LEY FEDERAL DEL TRABAJO",
+   "tipo": "ley",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LFT.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "1970-04-01",
+   "ultima_reforma_dof": "2026-05-14",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "LFT.doc",
+    "sha256": "0d6860c68de91de2e9f2410fcc54b296a262324c6a67da7ece5bba9865ffef43",
+    "bytes": 2778112
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 1266,
+    "renglones": 0,
+    "registros": 1279,
+    "derogados": 148,
+    "transitorios": 13,
+    "decretos": 32
+   }
+  },
+  {
+   "clave": "LGPC",
+   "nombre": "LEY GENERAL DE PROTECCIÓN CIVIL",
+   "tipo": "ley",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LGPC.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "2012-06-06",
+   "ultima_reforma_dof": "2023-12-21",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "LGPC.doc",
+    "sha256": "eb7d98ddcaefea003f8bbb8af91cd3f2544f81fbbac4cf4c0d38bde0ab3c53b0",
+    "bytes": 306176
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 94,
+    "renglones": 0,
+    "registros": 107,
+    "derogados": 1,
+    "transitorios": 13,
+    "decretos": 9
+   }
+  },
   {
    "clave": "LGPGIR",
    "nombre": "LEY GENERAL PARA LA PREVENCIÓN Y GESTIÓN INTEGRAL DE LOS RESIDUOS",
@@ -28,6 +252,62 @@
     "derogados": 0,
     "transitorios": 13,
     "decretos": 15
+   }
+  },
+  {
+   "clave": "LGS",
+   "nombre": "LEY GENERAL DE SALUD",
+   "tipo": "ley",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LGS.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "1984-02-07",
+   "ultima_reforma_dof": "2026-01-15",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "LGS.doc",
+    "sha256": "130641da82c19e7cb77cd4975d7b7c1855e54831f5113e963c6b54483ef94c0b",
+    "bytes": 1765888
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 733,
+    "renglones": 0,
+    "registros": 740,
+    "derogados": 42,
+    "transitorios": 7,
+    "decretos": 149
+   }
+  },
+  {
+   "clave": "LIVA",
+   "nombre": "LEY DEL IMPUESTO AL VALOR AGREGADO",
+   "tipo": "ley",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LIVA.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "1978-12-29",
+   "ultima_reforma_dof": "2021-11-12",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "LIVA.doc",
+    "sha256": "8c517be03c6a65d856f95e41f5b0094fe3537a00f65003b9f16d49bea3d12a18",
+    "bytes": 540160
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 80,
+    "renglones": 0,
+    "registros": 85,
+    "derogados": 15,
+    "transitorios": 5,
+    "decretos": 52
    }
   },
   {
@@ -60,6 +340,202 @@
    }
   },
   {
+   "clave": "Reg_CFF",
+   "nombre": "REGLAMENTO DEL CÓDIGO FISCAL DE LA FEDERACIÓN",
+   "tipo": "reglamento",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_CFF.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "2014-04-02",
+   "ultima_reforma_dof": "2014-04-02",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "Reg_CFF.doc",
+    "sha256": "86543b62d0bd840973200e84fdd016a40a795d4b84cf2da3943738c4248b88e0",
+    "bytes": 218112
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 113,
+    "renglones": 0,
+    "registros": 120,
+    "derogados": 0,
+    "transitorios": 7,
+    "decretos": 0
+   }
+  },
+  {
+   "clave": "Reg_LAN",
+   "nombre": "REGLAMENTO DE LA LEY DE AGUAS NACIONALES",
+   "tipo": "reglamento",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LAN_250814.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "1994-01-12",
+   "ultima_reforma_dof": "2014-08-25",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "Reg_LAN_250814.doc",
+    "sha256": "1eb1bc3f7bf2c3d8b2d80a56b854e22d78cc83c1b5f4593019915a4d5ca4d350",
+    "bytes": 333824
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 202,
+    "renglones": 0,
+    "registros": 216,
+    "derogados": 2,
+    "transitorios": 14,
+    "decretos": 5
+   }
+  },
+  {
+   "clave": "Reg_LAdua",
+   "nombre": "REGLAMENTO DE LA LEY ADUANERA",
+   "tipo": "reglamento",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LAdua.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "2015-04-20",
+   "ultima_reforma_dof": "2026-02-23",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "Reg_LAdua.doc",
+    "sha256": "6cd1e6cc4ff34a657bed0cd7f896bc317106848ea44e820c40da91842102febd",
+    "bytes": 431104
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 282,
+    "renglones": 0,
+    "registros": 288,
+    "derogados": 10,
+    "transitorios": 6,
+    "decretos": 8
+   }
+  },
+  {
+   "clave": "Reg_LFCPrecQuim",
+   "nombre": "REGLAMENTO DE LA LEY FEDERAL PARA EL CONTROL DE PRECURSORES QUÍMICOS, PRODUCTOS QUÍMICOS ESENCIALES Y MÁQUINAS PARA ELABORAR CÁPSULAS, TABLETAS Y/O COMPRIMIDOS",
+   "tipo": "reglamento",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LFCPrecQuim.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "1999-09-15",
+   "ultima_reforma_dof": "1999-09-15",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "Reg_LFCPrecQuim.doc",
+    "sha256": "617655dc6cc5002962ad5da33823b009c5218ce28c76b0d8862da5d92298f8b9",
+    "bytes": 67584
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 18,
+    "renglones": 0,
+    "registros": 19,
+    "derogados": 0,
+    "transitorios": 1,
+    "decretos": 0
+   }
+  },
+  {
+   "clave": "Reg_LFSA",
+   "nombre": "REGLAMENTO DE LA LEY FEDERAL DE SANIDAD ANIMAL",
+   "tipo": "reglamento",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LFSA.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "2012-05-21",
+   "ultima_reforma_dof": "2012-05-21",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "Reg_LFSA.doc",
+    "sha256": "be86e2b09c639ebae4ea5fc336c2be9c2a582a59bfb20c51c44f4e34512389dd",
+    "bytes": 414208
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 373,
+    "renglones": 0,
+    "registros": 381,
+    "derogados": 0,
+    "transitorios": 8,
+    "decretos": 0
+   }
+  },
+  {
+   "clave": "Reg_LGEEPA_MRETC",
+   "nombre": "REGLAMENTO DE LA LEY GENERAL DEL EQUILIBRIO ECOLÓGICO Y LA PROTECCIÓN AL AMBIENTE EN MATERIA DE REGISTRO DE EMISIONES Y TRANSFERENCIA DE CONTAMINANTES",
+   "tipo": "reglamento",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGEEPA_MRETC_311014.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "2004-06-03",
+   "ultima_reforma_dof": "2014-10-31",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "Reg_LGEEPA_MRETC_311014.doc",
+    "sha256": "1f4e40223c0b0bc77b73be4c702c4b46755706f52ae261909d7344688502728c",
+    "bytes": 111104
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 32,
+    "renglones": 0,
+    "registros": 39,
+    "derogados": 0,
+    "transitorios": 7,
+    "decretos": 1
+   }
+  },
+  {
+   "clave": "Reg_LGPC",
+   "nombre": "REGLAMENTO DE LA LEY GENERAL DE PROTECCIÓN CIVIL",
+   "tipo": "reglamento",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGPC_091215.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "2014-05-13",
+   "ultima_reforma_dof": "2015-12-09",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "Reg_LGPC_091215.doc",
+    "sha256": "9eae5ff09b477f7842cdc2f5944b4e0c921ce60bad2ac8a29fd53de7cbcb9462",
+    "bytes": 178688
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 114,
+    "renglones": 0,
+    "registros": 120,
+    "derogados": 0,
+    "transitorios": 6,
+    "decretos": 1
+   }
+  },
+  {
    "clave": "Reg_LGPGIR",
    "nombre": "REGLAMENTO DE LA LEY GENERAL PARA LA PREVENCIÓN Y GESTIÓN INTEGRAL DE LOS RESIDUOS",
    "tipo": "reglamento",
@@ -85,6 +561,34 @@
     "derogados": 0,
     "transitorios": 12,
     "decretos": 1
+   }
+  },
+  {
+   "clave": "Reg_LGS_MCSAEPS",
+   "nombre": "REGLAMENTO DE LA LEY GENERAL DE SALUD EN MATERIA DE CONTROL SANITARIO DE ACTIVIDADES, ESTABLECIMIENTOS, PRODUCTOS Y SERVICIOS",
+   "tipo": "reglamento",
+   "ambito": "federal",
+   "fuente": {
+    "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+    "url": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGS_MCSAEPS_281204.doc",
+    "formato": "doc"
+   },
+   "publicacion_original_dof": "1988-01-18",
+   "ultima_reforma_dof": "2004-12-28",
+   "fecha_carga": "2026-11-27",
+   "original": {
+    "archivo": "Reg_LGS_MCSAEPS_281204.doc",
+    "sha256": "a7eaa3f470f4c318fff203ef6cc82ca10f5d14543ae845c00fe2a2d3e69d5351",
+    "bytes": 532992
+   },
+   "convertidor": "diputados_doc",
+   "conteo": {
+    "articulos": 1356,
+    "renglones": 0,
+    "registros": 1360,
+    "derogados": 1014,
+    "transitorios": 4,
+    "decretos": 3
    }
   }
  ]

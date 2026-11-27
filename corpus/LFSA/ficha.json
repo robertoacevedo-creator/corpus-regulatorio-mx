@@ -1,0 +1,28 @@
+{
+ "clave": "LFSA",
+ "nombre": "LEY FEDERAL DE SANIDAD ANIMAL",
+ "tipo": "ley",
+ "ambito": "federal",
+ "fuente": {
+  "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+  "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LFSA.doc",
+  "formato": "doc"
+ },
+ "publicacion_original_dof": "2007-07-25",
+ "ultima_reforma_dof": "2024-05-21",
+ "fecha_carga": "2026-11-27",
+ "original": {
+  "archivo": "LFSA.doc",
+  "sha256": "ee1e815e94e745b563aa882d1c30af5db798837211267331a17a182bd43c4456",
+  "bytes": 372224
+ },
+ "convertidor": "diputados_doc",
+ "conteo": {
+  "articulos": 177,
+  "renglones": 0,
+  "registros": 187,
+  "derogados": 0,
+  "transitorios": 10,
+  "decretos": 4
+ }
+}
