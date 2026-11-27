@@ -20,3 +20,5 @@ jobs:
         run: python pruebas/test_vigilante.py
       - name: Revisar corpus, catálogo, huellas y artículos de control
         run: python herramientas/validar.py
+      - name: Probar la consulta y el verificador de citas
+        run: python pruebas/test_consulta.py
