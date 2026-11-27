@@ -1,0 +1,29 @@
+{
+ "clave": "NOM-052-SEMARNAT-2005",
+ "nombre": "NORMA Oficial Mexicana NOM-052-SEMARNAT-2005, Que establece las características, el procedimiento de identificación, clasificación y los listados de los residuos peligrosos.",
+ "tipo": "nom",
+ "ambito": "federal",
+ "fuente": {
+  "emisor": "Diario Oficial de la Federación (SIDOF)",
+  "url": "https://sidof.segob.gob.mx/notas/4912592",
+  "formato": "pdf"
+ },
+ "publicacion_original_dof": "2006-06-23",
+ "ultima_reforma_dof": "2006-06-23",
+ "fecha_carga": "2026-11-26",
+ "original": {
+  "archivo": "NOM-052-SEMARNAT-2005.pdf",
+  "sha256": "40de20a610d561b41ba6837a655da0828f3611bf34aade87ca754f0bad1b302d",
+  "bytes": 344231
+ },
+ "convertidor": "dof_pdf",
+ "nota": "linea_fuente es el número de página del PDF",
+ "conteo": {
+  "articulos": 76,
+  "renglones": 705,
+  "registros": 796,
+  "derogados": 0,
+  "transitorios": 3,
+  "decretos": 0
+ }
+}

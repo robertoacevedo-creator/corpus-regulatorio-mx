@@ -1,0 +1,126 @@
+{
+ "version": "v1",
+ "fecha": "2026-11-26",
+ "archivos": {
+  ".github/workflows/validar.yml": {
+   "sha256": "5403b5702d4557b28d19983a661002cf13d4f248e2de67f710b6c495abb8d1a4",
+   "bytes": 486,
+   "lineas": 19
+  },
+  ".gitignore": {
+   "sha256": "b7a8b7b0e95501b6f0193ee377784f54165cbcef575bd23756ebc64451126250",
+   "bytes": 152,
+   "lineas": 8
+  },
+  "CAMBIOS.md": {
+   "sha256": "3db962b2d6381c10f34cbd5623e2fe0efea613bbf69308c906d464c7c29d2e3d",
+   "bytes": 943,
+   "lineas": 13
+  },
+  "README.md": {
+   "sha256": "36696cd4a7f43e6d75c458757894415c27f4b2c862c15353965ffde8a1e058ba",
+   "bytes": 8903,
+   "lineas": 125
+  },
+  "catalogo.json": {
+   "sha256": "79ffafba74ed4b56a764ac265072c42cf56e7575af773bf530c9815402b69060",
+   "bytes": 2639,
+   "lineas": 91
+  },
+  "convertidores/comun.py": {
+   "sha256": "db378595773e367c79c04bed6b4f866668223a23f0896b8b910b15b3f239a782",
+   "bytes": 4186,
+   "lineas": 120
+  },
+  "convertidores/diputados_doc.py": {
+   "sha256": "181ce282c10cfcc754a30e7991457edfe6f07d817a70193addb0bd7365888b69",
+   "bytes": 15089,
+   "lineas": 339
+  },
+  "convertidores/dof_pdf.py": {
+   "sha256": "7798b850875475fa2ca01f13499fb602fc1795763f6da0f7715dea3768c57259",
+   "bytes": 25643,
+   "lineas": 555
+  },
+  "corpus/LGPGIR/articulos.jsonl": {
+   "sha256": "61dae2b5197b0db4c4b950a1b69a803503d34534991b6fe7818c426c24b92bb1",
+   "bytes": 176002,
+   "lineas": 139
+  },
+  "corpus/LGPGIR/decretos.jsonl": {
+   "sha256": "ed98af6acfcf83a55a9dd0a4b2d9c26ef337e5cd2fee8a666e157922b389c023",
+   "bytes": 36321,
+   "lineas": 15
+  },
+  "corpus/LGPGIR/ficha.json": {
+   "sha256": "0c13c35bfe6e095f1016423dd945fbc4ab41d33ce4e849ab5eff116fda639149",
+   "bytes": 728,
+   "lineas": 28
+  },
+  "corpus/NOM-052-SEMARNAT-2005/articulos.jsonl": {
+   "sha256": "589fae72bc9695275aaa13b383929906a3d2a6d6ec93661ce7cbbaae22371786",
+   "bytes": 373157,
+   "lineas": 796
+  },
+  "corpus/NOM-052-SEMARNAT-2005/ficha.json": {
+   "sha256": "e93d9d8579d6cfad43089d1b7f807891e704db22115b1956eb07b84edc414f09",
+   "bytes": 897,
+   "lineas": 29
+  },
+  "corpus/Reg_LGPGIR/articulos.jsonl": {
+   "sha256": "ce6406bbd3e16863adc62ccbe941b97906c74b00e97f7af59c0df85c4a4337f7",
+   "bytes": 228557,
+   "lineas": 176
+  },
+  "corpus/Reg_LGPGIR/decretos.jsonl": {
+   "sha256": "094c99abb9cddda99e4115c9ad2778d2410813c01ebe1eb58a969334f43d02aa",
+   "bytes": 1911,
+   "lineas": 1
+  },
+  "corpus/Reg_LGPGIR/ficha.json": {
+   "sha256": "ffa3cd389741e6ddd8d3967672b063bb9f84920ef2cc8ad50f006f2a5f6b23c2",
+   "bytes": 780,
+   "lineas": 28
+  },
+  "herramientas/cargar.py": {
+   "sha256": "d4665252531700f367181ac35302f963ae3f42e74b616e858cd17737894f2de1",
+   "bytes": 1667,
+   "lineas": 48
+  },
+  "herramientas/control.json": {
+   "sha256": "7c0caa96a04d9beec69e834844cdc6e201ef4c5f4dc5ff201df52a26ace02201",
+   "bytes": 1944,
+   "lineas": 67
+  },
+  "herramientas/fuentes.json": {
+   "sha256": "b2dc8c15ff138128e379518a756eb13ab057be78f57c7434619130b2b7f2853b",
+   "bytes": 655,
+   "lineas": 8
+  },
+  "herramientas/publicar.py": {
+   "sha256": "f3e38c3fc9281002eb1f6cd434b3c1cdf8a1900586c07cb74b38294e41a3852d",
+   "bytes": 2306,
+   "lineas": 57
+  },
+  "herramientas/validar.py": {
+   "sha256": "f2b746804e64e93cad988d1ec9f7fe4fcbee48853f45dcefac9ffdee7eafa553",
+   "bytes": 6838,
+   "lineas": 139
+  },
+  "pruebas/test_diputados.py": {
+   "sha256": "76743caf1f391783b3596a956425ba35ac40666e0cfd784f2bacbf776e8612ea",
+   "bytes": 4914,
+   "lineas": 106
+  },
+  "requirements.txt": {
+   "sha256": "69505ca0d154285d3931f8005a96c4e45a631cd9a344fa6a9304c711e6c41323",
+   "bytes": 20,
+   "lineas": 1
+  }
+ },
+ "normas": [
+  "LGPGIR",
+  "NOM-052-SEMARNAT-2005",
+  "Reg_LGPGIR"
+ ]
+}

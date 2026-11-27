@@ -1,0 +1,28 @@
+{
+ "clave": "LGPGIR",
+ "nombre": "LEY GENERAL PARA LA PREVENCIÓN Y GESTIÓN INTEGRAL DE LOS RESIDUOS",
+ "tipo": "ley",
+ "ambito": "federal",
+ "fuente": {
+  "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+  "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LGPGIR.doc",
+  "formato": "doc"
+ },
+ "publicacion_original_dof": "2003-10-08",
+ "ultima_reforma_dof": "2026-01-19",
+ "fecha_carga": "2026-11-26",
+ "original": {
+  "archivo": "LGPGIR.doc",
+  "sha256": "dcb655a4cd383e343de7552f714203c97e47ddc4c908707e54fab85f4fc38d67",
+  "bytes": 339968
+ },
+ "convertidor": "diputados_doc",
+ "conteo": {
+  "articulos": 126,
+  "renglones": 0,
+  "registros": 139,
+  "derogados": 0,
+  "transitorios": 13,
+  "decretos": 15
+ }
+}

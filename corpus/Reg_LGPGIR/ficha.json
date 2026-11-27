@@ -1,0 +1,28 @@
+{
+ "clave": "Reg_LGPGIR",
+ "nombre": "REGLAMENTO DE LA LEY GENERAL PARA LA PREVENCIÓN Y GESTIÓN INTEGRAL DE LOS RESIDUOS",
+ "tipo": "reglamento",
+ "ambito": "federal",
+ "fuente": {
+  "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+  "url": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGPGIR_311014.doc",
+  "formato": "doc"
+ },
+ "publicacion_original_dof": "2006-11-30",
+ "ultima_reforma_dof": "2014-10-31",
+ "fecha_carga": "2026-11-26",
+ "original": {
+  "archivo": "Reg_LGPGIR_311014.doc",
+  "sha256": "c66196231a9924120a30d2d02f0c09d066cb3fae50ae7395febc83b338f76ff0",
+  "bytes": 281600
+ },
+ "convertidor": "diputados_doc",
+ "conteo": {
+  "articulos": 164,
+  "renglones": 0,
+  "registros": 176,
+  "derogados": 0,
+  "transitorios": 12,
+  "decretos": 1
+ }
+}

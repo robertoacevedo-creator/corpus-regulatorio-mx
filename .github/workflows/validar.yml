@@ -1,0 +1,19 @@
+name: Revisión automática
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probar el convertidor de Diputados con casos difíciles
+        run: python pruebas/test_diputados.py
+      - name: Revisar corpus, catálogo, huellas y artículos de control
+        run: python herramientas/validar.py

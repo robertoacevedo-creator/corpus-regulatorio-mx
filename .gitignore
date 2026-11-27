@@ -1,0 +1,8 @@
+# Los archivos originales no se suben: aquí solo va su huella SHA-256 (ver catalogo.json).
+originales/
+*.doc
+*.docx
+*.pdf
+__pycache__/
+*.pyc
+.DS_Store

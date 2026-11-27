@@ -1,0 +1,8 @@
+[
+ {"clave": "LGPGIR", "convertidor": "diputados_doc", "archivo": "LGPGIR.doc",
+  "args": ["--fuente", "https://www.diputados.gob.mx/LeyesBiblio/doc/LGPGIR.doc", "--tipo", "ley"]},
+ {"clave": "Reg_LGPGIR", "convertidor": "diputados_doc", "archivo": "Reg_LGPGIR_311014.doc",
+  "args": ["--fuente", "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGPGIR_311014.doc", "--tipo", "reglamento"]},
+ {"clave": "NOM-052-SEMARNAT-2005", "convertidor": "dof_pdf", "archivo": "NOM-052-SEMARNAT-2005.pdf",
+  "args": ["--fuente", "https://sidof.segob.gob.mx/notas/4912592", "--publicacion", "2006-06-23", "--emisor", "Diario Oficial de la Federación (SIDOF)"]}
+]
