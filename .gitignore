@@ -6,3 +6,5 @@ originales/
 __pycache__/
 *.pyc
 .DS_Store
+informe.json
+plan.json

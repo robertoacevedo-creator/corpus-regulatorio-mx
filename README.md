@@ -115,7 +115,23 @@ python pruebas/test_diputados.py
   - `pruebas/test_diputados.py`;
   - `herramientas/validar.py`: sin registros vacíos ni repetidos, todo lo del catálogo con su texto, conteos del catálogo que cuadran, sin notas de reforma dentro del texto, huellas que cuadran y artículos de control que siguen diciendo lo mismo.
 - Cada versión aprobada sube el número (v1, v2...) y deja su línea en `CAMBIOS.md`.
-- Un vigilante semanal (pendiente) volverá a bajar las leyes de Diputados y del Congreso de Durango, comparará huellas con el catálogo y abrirá un aviso si algo cambió.
+- Un vigilante semanal revisa las leyes y reglamentos federales (ver abajo). El de las leyes de Durango y el de las NOM están pendientes.
+
+## Vigilante semanal
+
+Corre en GitHub Actions (`.github/workflows/vigilante.yml`) cada lunes a las 7:17, hora de la Ciudad de México, y a mano desde la pestaña *Actions* con *Run workflow*.
+
+1. **Lee los índices de la Cámara de Diputados** ([leyes](https://www.diputados.gob.mx/LeyesBiblio/index.htm) y [reglamentos](https://www.diputados.gob.mx/LeyesBiblio/regla.htm)). Encuentra la fila de cada norma del catálogo por el nombre de su archivo vigente y lee su fecha de última reforma y sus marcas ("Nueva reforma", "En actualización", "Sentencia SCJN").
+2. **Si la fecha es la misma del catálogo y no hay marcas,** termina sin hacer nada.
+3. **Si algo cambió,** baja el texto vigente con la liga del índice (el nombre del archivo de los reglamentos cambia con cada reforma), lo convierte y lo compara artículo por artículo:
+   - **Texto nuevo:** abre un pull request con la versión siguiente (v2, v3...), su línea en `CAMBIOS.md` y la lista de artículos reformados, adicionados, derogados y eliminados. La revisión automática corre sobre ese pull request.
+   - **Reforma anunciada pero el texto aún no cambia:** abre un aviso (issue) de compilación pendiente y lo vuelve a revisar la semana siguiente.
+   - **Falla** (no encuentra la norma, no baja el archivo o no lo puede convertir): abre un aviso con el detalle. No propone nada.
+4. **Nada entra a `main` sin el merge del responsable.** El vigilante no repite avisos abiertos y no abre otro pull request mientras haya uno suyo pendiente.
+
+Para probarlo sin esperar una reforma real, en *Run workflow* se escribe una clave en "simular" (por ejemplo `LGPGIR`): la trata como si hubiera cambiado, baja y convierte el texto, y si sale igual al que ya tenemos no abre nada.
+
+Límite: la compilación de Diputados puede ir uno o dos días detrás del DOF, que es el texto oficial.
 
 ## Límites conocidos
 
