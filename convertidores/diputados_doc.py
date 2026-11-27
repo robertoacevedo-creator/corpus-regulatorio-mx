@@ -31,17 +31,17 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import comun  # noqa: E402
 
-SUFIJOS = (r"(?:Bis|BIS|Ter|TER|Qu[áa]ter|QU[ÁA]TER|Quintus|QUINTUS|Quinquies|QUINQUIES|Sexies|SEXIES|"
-           r"Septies|SEPTIES|Octies|OCTIES|Nonies|NONIES|Decies|DECIES)")
+SUFIJOS = (r"(?i:Bis|Ter|Qu[áa]ter|Quintus|Sextus|Septimus|Quinquies|Sexies|Septies|Octies|Nonies|Decies)")
 # Número, con letra o número pegado por guion ("4-A", "58-1") o letra suelta solo si
 # enseguida viene el separador o un sufijo ("69 C Bis", "4 A.-"). Una letra o un
 # romano después del separador ("Artículo 11.- I. Las...") ya es texto.
-LETRA = (r"(?:-[A-Z](?![A-Za-zÁÉÍÓÚáéíóúÑñ])|-\d+(?!\d)|\s+[A-Z](?=\s*\.\s*[-–]|\s*[-–]|\s+" + SUFIJOS + r"))")
-NUM = r"\d+(?:" + LETRA + r")?\s*(?:o|º|°)?\.?"
-ID_ART = NUM + r"(?:(?:\s*|-)" + SUFIJOS + r"(?:\s*\d+)?)*"
+LETRA = (r"(?:-[A-ZÑ](?![A-Za-zÁÉÍÓÚáéíóúÑñ])(?:-\d+(?!\d))?|-\d+(?!\d)|\s+[A-Z](?=\s*\.\s*[-–]|\s*[-–]|\s+" + SUFIJOS + r"))")
+ORD_ANTES_DE_LETRA = r"(?:(?:o|º|°)\.?(?=-[A-ZÑ]|-\d))"  # "1o.-A": el punto del ordinal va antes de la letra
+NUM = r"\d+" + ORD_ANTES_DE_LETRA + r"?(?:" + LETRA + r")?\s*(?:o|º|°)?\.?"
+ID_ART = NUM + r"(?:(?:\s*|-)" + SUFIJOS + r"(?:\s*\d+|-\d+)?(?:\s+[A-Z](?=\s*\.\s*[-–]|\s*[-–]))?)*"
 SEP = r"\s*(?:\.\s*-|\.\s*–|\.|-|–)\s*"
 
-RE_ARTICULO = re.compile(r"^(?:ART[ÍI]CULO|Art[íi]culo)\s+(" + ID_ART + r")" + SEP)
+RE_ARTICULO = re.compile(r"^(?:ART[ÍI]CULO|Art[íi]culo)\.?\s+(" + ID_ART + r")" + SEP)
 RE_RANGO = re.compile(r"^(?:ART[ÍI]CULOS|Art[íi]culos)\s+(" + ID_ART + r")\s+(?:a|al|y)\s+(" + ID_ART + r")" + SEP)
 
 ORDINALES = (
@@ -52,9 +52,9 @@ ORDINALES = (
 )
 RE_TRANSITORIO = re.compile(r"^(?:ART[ÍI]CULO\s+)?(" + ORDINALES + r"(?:\s+BIS)?)" + SEP, re.I)
 
-ORDINAL_ENCABEZADO = (r"(?:[IVXLC]+|\d+|[ÚU]NICO|PRIMER[OA]?|SEGUND[OA]|TERCER[OA]?|CUART[OA]|QUINT[OA]|"
-                      r"SEXT[OA]|S[ÉE]PTIM[OA]|OCTAV[OA]|NOVEN[OA]|D[ÉE]CIM[OA]\w*|UND[ÉE]CIM[OA]|"
-                      r"DUOD[ÉE]CIM[OA]|VIG[ÉE]SIM[OA]\w*)")
+_UNIDAD = r"(?:PRIMER[OA]?|SEGUND[OA]|TERCER[OA]?|CUART[OA]|QUINT[OA]|SEXT[OA]|S[ÉE]PTIM[OA]|OCTAV[OA]|NOVEN[OA])"
+ORDINAL_ENCABEZADO = (r"(?:[IVXLC]+|\d+|[ÚU]NIC[OA]|ONCE|DOCE|TRECE|CATORCE|QUINCE|DIECIS[ÉE]IS|DIECISIETE|DIECIOCHO|DIECINUEVE|VEINTE|" + _UNIDAD + r"|UND[ÉE]CIM[OA]|DUOD[ÉE]CIM[OA]|"
+                      r"(?:D[ÉE]CIM[OA]|VIG[ÉE]SIM[OA]|TRIG[ÉE]SIM[OA]|CUADRAG[ÉE]SIM[OA])\w*(?:\s+" + _UNIDAD + r")?)")
 RE_ENCABEZADO = re.compile(
     r"^(LIBRO|T[ÍI]TULO|CAP[ÍI]TULO|SECCI[ÓO]N|Libro|T[íi]tulo|Cap[íi]tulo|Secci[óo]n)\s+("
     + ORDINAL_ENCABEZADO + r")(?:\s+(?:BIS|Bis))?(?=\s|$|\.)", re.I
@@ -73,7 +73,7 @@ RE_ANOTACION = re.compile(
 )
 
 RE_CIERRE = re.compile(
-    r"^(?:M[ée]xico,\s*(?:D\.?\s*F\.?|Distrito Federal)|Ciudad de M[ée]xico,\s*a|Dado en (?:la Residencia|el Palacio)|"
+    r"^(?:M[ée]xico,\s*(?:D\.?\s*F\.?|Distrito Federal)|Ciudad de M[ée]xico,\s*a|Dado en (?i:la residencia|el palacio)|"
     r"En cumplimiento de lo dispuesto por la fracci[óo]n I del [Aa]rt[íi]culo 89|SAL[ÓO]N DE SESIONES|Sal[óo]n de Sesiones)",
 )
 
@@ -83,20 +83,29 @@ RE_INICIO_DECRETO = re.compile(r"^(?:DECRETO|ACUERDO|ACLARACI[ÓO]N|FE DE ERRATA
 RE_DEROGADO = re.compile(r"^\(?\s*(?:se derogan?|derogad[oa]s?)\s*\)?\s*\.?$", re.I)
 
 
+RE_NOTA_LARGA = re.compile(r"^(?:Nota:|Reforma DOF \d{2}-\d{2}-\d{4}:)")
+RE_FECHA_SUELTA = re.compile(r"^DOF\s+\d{2}-\d{2}-\d{4}(?:\s*[,.]\s*|\s*$)")
+RE_MARCA_ANIO = re.compile(r"^A partir de \d{4}$")  # separador de años que Diputados pone antes de los decretos
+
+
 def es_anotacion(linea):
-    return bool(len(linea) < 400 and comun.RE_FECHA_DOF.search(linea) and RE_ANOTACION.match(linea))
+    if not comun.RE_FECHA_DOF.search(linea):
+        return False
+    if RE_NOTA_LARGA.match(linea):
+        return len(linea) < 2500
+    return len(linea) < 400 and bool(RE_ANOTACION.match(linea))
 
 
 def normalizar_id(crudo):
     """'1o.' -> '1'; '62 BIS' -> '62 Bis'; '4-A' -> '4-A'; '58-1' -> '58-1'; '69 C Bis' -> '69 C Bis'."""
-    m = re.match(r"(\d+(?:-[A-Z](?![A-Za-zÁÉÍÓÚáéíóúÑñ])|-\d+)?)(?:\s+([A-Z])(?![A-Za-zÁÉÍÓÚáéíóúÑñ]))?"
-                 r"\s*(?:o|º|°)?\.?\s*(.*)$", crudo.strip())
-    partes = [m.group(1)]
-    if m.group(2):
-        partes.append(m.group(2))
-    resto = m.group(3)
-    for pieza in re.findall(SUFIJOS + r"|\d+", resto):
-        partes.append(pieza if pieza.isdigit() else pieza.capitalize())
+    m = re.match(r"(\d+)" + ORD_ANTES_DE_LETRA + r"?((?:-[A-ZÑ](?![A-Za-zÁÉÍÓÚáéíóúÑñ])(?:-\d+)?|-\d+)?)"
+                 r"(?:\s+([A-Z])(?![A-Za-zÁÉÍÓÚáéíóúÑñ]))?\s*(?:o|º|°)?\.?\s*(.*)$", crudo.strip())
+    partes = [m.group(1) + m.group(2)]
+    if m.group(3):
+        partes.append(m.group(3))
+    resto = m.group(4)
+    for pieza in re.findall(SUFIJOS + r"|\d+|(?<![A-Za-zÁÉÍÓÚáéíóúÑñ])[A-Z](?![A-Za-zÁÉÍÓÚáéíóúÑñ])", resto):
+        partes.append(pieza if (pieza.isdigit() or len(pieza) == 1) else pieza.capitalize())
     return " ".join(partes)
 
 
@@ -125,7 +134,7 @@ def convertir(ruta, clave, fuente, tipo_norma):
     ultima_reforma = None
     publicacion = None
     for _, t in no_vacias[:12]:
-        if re.match(r"^[ÚU]ltima reforma publicada", t, re.I):
+        if re.match(r"^[ÚU]ltimas? reformas? publicadas?", t, re.I):
             ultima_reforma = comun.fecha_dof_a_iso(t)
         if publicacion is None and "Diario Oficial de la Federación" in t and "publicad" in t.lower():
             publicacion = comun.fecha_larga_a_iso(t)
@@ -155,8 +164,15 @@ def convertir(ruta, clave, fuente, tipo_norma):
         return {"ley": clave, "id": id_, "tipo": tipo, "estado": "vigente", "ubicacion": ubicacion,
                 "_lineas": [t], "anotaciones": [], "linea_fuente": n}
 
+    previa_fue_nota = False
     for n, t in cuerpo:
-        if es_anotacion(t):
+        if previa_fue_nota and RE_FECHA_SUELTA.match(t):
+            # Continuación de una nota que Word partió en dos renglones: se pega a la nota.
+            if actual and not cerrado and actual["anotaciones"]:
+                actual["anotaciones"][-1] += " " + t
+            continue
+        previa_fue_nota = es_anotacion(t)
+        if previa_fue_nota:
             if actual and not cerrado:
                 actual["anotaciones"].append(t)
             else:
@@ -183,7 +199,7 @@ def convertir(ruta, clave, fuente, tipo_norma):
                 esperando_nombre = nivel if len(t) <= m_enc.end() + 4 else None
                 continue
             if esperando_nombre is not None:
-                if not RE_ARTICULO.match(t) and not RE_RANGO.match(t) and len(t) < 200:
+                if not RE_ARTICULO.match(t) and not RE_RANGO.match(t) and len(t) < 600:
                     jerarquia[esperando_nombre] += " " + t
                     esperando_nombre = None
                     continue
@@ -205,6 +221,14 @@ def convertir(ruta, clave, fuente, tipo_norma):
                 continue
             if actual:
                 actual["_lineas"].append(t)
+            elif visto_articulo and jerarquia and RE_DEROGADO.match(t):
+                # "(Se deroga)" bajo un capítulo o sección derogado: queda en el encabezado.
+                nivel_bajo = max(jerarquia)
+                jerarquia[nivel_bajo] += " " + t
+            elif visto_articulo and jerarquia and re.fullmatch(r"[IVXLC]+", t):
+                # Apartado numerado con romano ("I" / "Disposiciones generales") dentro de una sección.
+                jerarquia[4] = t
+                esperando_nombre = 4
             elif visto_articulo:
                 sin_lugar.append((n, t))
             continue
@@ -237,7 +261,9 @@ def convertir(ruta, clave, fuente, tipo_norma):
                           else RE_ARTICULO.sub("", a["texto"], count=1))
         else:
             cuerpo_txt = RE_ARTICULO.sub("", RE_TRANSITORIO.sub("", a["texto"], count=1), count=1)
-        if "\n" not in a["texto"] and RE_DEROGADO.match(cuerpo_txt.strip()):
+        primera, *resto_l = cuerpo_txt.strip().split("\n")
+        if RE_DEROGADO.match(primera.strip()) and all(
+                re.search(r"(?i)derogad|\bDOF\b|^[\d,\s.\-]+", r.strip()) for r in resto_l):
             a["estado"] = "derogado"
         fechas = [f for nota in a["anotaciones"] for f in comun.fechas_dof(nota)]
         a["ultima_reforma_articulo"] = max(fechas) if fechas else None
@@ -259,7 +285,8 @@ def convertir(ruta, clave, fuente, tipo_norma):
 
     while k < len(seccion_decretos):
         if not es_inicio(k):
-            sin_lugar.append(seccion_decretos[k])
+            if not RE_MARCA_ANIO.match(seccion_decretos[k][1]):
+                sin_lugar.append(seccion_decretos[k])
             k += 1
             continue
         n, titulo = seccion_decretos[k]
@@ -299,7 +326,7 @@ def convertir(ruta, clave, fuente, tipo_norma):
         avisos.append(f"{anotaciones_sueltas} notas de reforma de encabezados (capítulo, título) no se guardan")
     if sin_lugar:
         errores.append(f"{len(sin_lugar)} líneas del original sin lugar: " +
-                       "; ".join(f"línea {n}: {t[:80]}" for n, t in sin_lugar[:10]))
+                       "; ".join(f"línea {n}: {t[:110]}" for n, t in sin_lugar[:25]))
 
     original = Path(ruta)
     ficha = {

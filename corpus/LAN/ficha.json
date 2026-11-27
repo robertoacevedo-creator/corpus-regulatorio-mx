@@ -1,0 +1,28 @@
+{
+ "clave": "LAN",
+ "nombre": "LEY DE AGUAS NACIONALES",
+ "tipo": "ley",
+ "ambito": "federal",
+ "fuente": {
+  "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+  "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LAN.doc",
+  "formato": "doc"
+ },
+ "publicacion_original_dof": "1992-12-01",
+ "ultima_reforma_dof": "2025-12-11",
+ "fecha_carga": "2026-11-27",
+ "original": {
+  "archivo": "LAN.doc",
+  "sha256": "89cffb9aa5addab411111b2876df5ede12cea7bfb79122688d55e9350b7a9157",
+  "bytes": 679424
+ },
+ "convertidor": "diputados_doc",
+ "conteo": {
+  "articulos": 215,
+  "renglones": 0,
+  "registros": 228,
+  "derogados": 21,
+  "transitorios": 13,
+  "decretos": 12
+ }
+}

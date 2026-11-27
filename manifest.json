@@ -1,5 +1,5 @@
 {
- "version": "v1.2",
+ "version": "2",
  "fecha": "2026-11-27",
  "archivos": {
   ".github/workflows/validar.yml": {
@@ -18,9 +18,9 @@
    "lineas": 10
   },
   "CAMBIOS.md": {
-   "sha256": "4250e0bd12e4d2b8dfaa525e6155c4fb7438a0041426ec859c4a3e1586677812",
-   "bytes": 1261,
-   "lineas": 21
+   "sha256": "3ac6e426b0b95b6bdf621b5fe559eb1d07c54235865ee46cb73b1feace8b8258",
+   "bytes": 4522,
+   "lineas": 48
   },
   "README.md": {
    "sha256": "7223d1f53b12ab980d6eee6541fb7f34be472396348d48c2f9388a632b1d48ab",
@@ -28,24 +28,144 @@
    "lineas": 156
   },
   "catalogo.json": {
-   "sha256": "9fd64d3c3ee4b255d15b78e56d6f2bb4f689baee3e00ee4be42c26eb1ad2df3f",
-   "bytes": 2641,
-   "lineas": 91
+   "sha256": "1643f8952f80f1025034a2f641d3ad33bd0fd3eed9dc4a917f9ecf00cf2b1ab4",
+   "bytes": 16752,
+   "lineas": 595
   },
   "convertidores/comun.py": {
-   "sha256": "db378595773e367c79c04bed6b4f866668223a23f0896b8b910b15b3f239a782",
-   "bytes": 4186,
+   "sha256": "cbe23ebd9ed03129151136e46927cebd69470f99558d639348d22a97ffbc35f5",
+   "bytes": 4195,
    "lineas": 120
   },
   "convertidores/diputados_doc.py": {
-   "sha256": "181ce282c10cfcc754a30e7991457edfe6f07d817a70193addb0bd7365888b69",
-   "bytes": 15089,
-   "lineas": 339
+   "sha256": "da516582e8118e0a1e25e832aee6f66e46d5cba72b0a88675ff9116a22551eac",
+   "bytes": 16980,
+   "lineas": 366
   },
   "convertidores/dof_pdf.py": {
    "sha256": "7798b850875475fa2ca01f13499fb602fc1795763f6da0f7715dea3768c57259",
    "bytes": 25643,
    "lineas": 555
+  },
+  "corpus/CFF/articulos.jsonl": {
+   "sha256": "63b114995158e34e70eb8244d62bf7b464de0f77fc983c66e2fdaaeb7db80521",
+   "bytes": 975201,
+   "lineas": 432
+  },
+  "corpus/CFF/decretos.jsonl": {
+   "sha256": "a2965d25fc1e64d94b0eaca0b31cac467f0715d7cab01cfc43a1cf685ab1007b",
+   "bytes": 315335,
+   "lineas": 76
+  },
+  "corpus/CFF/ficha.json": {
+   "sha256": "93beca1aa53fad48ef4e5e3411313636d5ed7c556309e3c15b6798571c8f2d58",
+   "bytes": 686,
+   "lineas": 28
+  },
+  "corpus/LAN/articulos.jsonl": {
+   "sha256": "ec2864648710495ba38a6e192e15f672e5f5b9c6ab69301e2ee30a431a7d508c",
+   "bytes": 417035,
+   "lineas": 228
+  },
+  "corpus/LAN/decretos.jsonl": {
+   "sha256": "ec5e1dc8fd8b3feb321c731bf215ebcc2eb0910f57dc4e8b9329373ba744ff0d",
+   "bytes": 47022,
+   "lineas": 12
+  },
+  "corpus/LAN/ficha.json": {
+   "sha256": "a100ae0f0c3be1b0d0a55e19f40276cd9d9e81fd1930fcbfbce0d5c85134247f",
+   "bytes": 676,
+   "lineas": 28
+  },
+  "corpus/LAdua/articulos.jsonl": {
+   "sha256": "7468bab7d191c75a995051d933520cf96ac3b0429fdd931994432782f25dada6",
+   "bytes": 622664,
+   "lineas": 277
+  },
+  "corpus/LAdua/decretos.jsonl": {
+   "sha256": "0c0c9c8fdddf54af99be8832eb3e9cf71120ad13c0d321256c7fcc675f0aaf51",
+   "bytes": 133916,
+   "lineas": 41
+  },
+  "corpus/LAdua/ficha.json": {
+   "sha256": "aa3b3d627b9c45e6969c6d8704dafcd6bda2d987a4c0f35fb9ef522f05cebbcb",
+   "bytes": 671,
+   "lineas": 28
+  },
+  "corpus/LCE/articulos.jsonl": {
+   "sha256": "001cf8b50fd5ac6c209cfbe3f40dda3057c6923193cc6701aba9baea70cfa4ea",
+   "bytes": 134741,
+   "lineas": 113
+  },
+  "corpus/LCE/decretos.jsonl": {
+   "sha256": "ccacf61e975180711a14e9357246810f78ed9bff6b41b852e8b36396517c40e4",
+   "bytes": 15902,
+   "lineas": 7
+  },
+  "corpus/LCE/ficha.json": {
+   "sha256": "26ed9f8781ce246f767833b1a1358e46054e5325f0539d2c2ffeda7458d592e3",
+   "bytes": 674,
+   "lineas": 28
+  },
+  "corpus/LFCPQ/articulos.jsonl": {
+   "sha256": "3afbcabe47e9cb8c9d2e19bf2d23d3e3cb722354a432e919213785bdbf05595d",
+   "bytes": 39800,
+   "lineas": 35
+  },
+  "corpus/LFCPQ/decretos.jsonl": {
+   "sha256": "8176d3cad5accf4373cb5ba0849c12992bf6091da0467662346c1c63ad477ce9",
+   "bytes": 31168,
+   "lineas": 9
+  },
+  "corpus/LFCPQ/ficha.json": {
+   "sha256": "4cf66348c22cd9c6aae6d1fd9573783358574c09ac1bf787cb7358d2f6065bef",
+   "bytes": 800,
+   "lineas": 28
+  },
+  "corpus/LFSA/articulos.jsonl": {
+   "sha256": "bb2f36305434c217647a3bf50be2f1367dbc65c3c0578df928108c07e7ad38d5",
+   "bytes": 239226,
+   "lineas": 187
+  },
+  "corpus/LFSA/decretos.jsonl": {
+   "sha256": "73e0c758a38e941737e17754d0819822806dc8f092bb3905c36813103ada87ad",
+   "bytes": 9885,
+   "lineas": 4
+  },
+  "corpus/LFSA/ficha.json": {
+   "sha256": "0401df285745be6d6285f4888d56ce8c2e0c5d39534cb445a24e4bf2d21d5c8e",
+   "bytes": 683,
+   "lineas": 28
+  },
+  "corpus/LFT/articulos.jsonl": {
+   "sha256": "b57f62f38f79655d0b819a7cd85b93dabd94780bc138de671918b394a8204fb3",
+   "bytes": 1558574,
+   "lineas": 1279
+  },
+  "corpus/LFT/decretos.jsonl": {
+   "sha256": "be89b91c370700866e930f7eb9c0972dedcfcbf5da08b0d6df295fb5a9e3e09a",
+   "bytes": 137808,
+   "lineas": 32
+  },
+  "corpus/LFT/ficha.json": {
+   "sha256": "93aae82058ee490cb3a9b8cb99ffaf81168f61835e8e7a410b5e3ee4b52d4e91",
+   "bytes": 680,
+   "lineas": 28
+  },
+  "corpus/LGPC/articulos.jsonl": {
+   "sha256": "100c14d6430724d25bb4708871470f5ed00932ad08eabdaddedf46cee659568b",
+   "bytes": 124410,
+   "lineas": 107
+  },
+  "corpus/LGPC/decretos.jsonl": {
+   "sha256": "adb793f9877a4c71ee449556a89df879f0be4a0edea91de0947f54fd2cc6f877",
+   "bytes": 41762,
+   "lineas": 9
+  },
+  "corpus/LGPC/ficha.json": {
+   "sha256": "835973d503d8a10b1b2902c8229eb9892c7618a8ff3d96c23b3b09ebb5ed5448",
+   "bytes": 685,
+   "lineas": 28
   },
   "corpus/LGPGIR/articulos.jsonl": {
    "sha256": "61dae2b5197b0db4c4b950a1b69a803503d34534991b6fe7818c426c24b92bb1",
@@ -62,6 +182,36 @@
    "bytes": 728,
    "lineas": 28
   },
+  "corpus/LGS/articulos.jsonl": {
+   "sha256": "0374bcc7793b0ed58d929bdad5dcb29ee165afccf1193a8b1e5e806dac7026f6",
+   "bytes": 850914,
+   "lineas": 740
+  },
+  "corpus/LGS/decretos.jsonl": {
+   "sha256": "c514f2e91756c0e316c9737e3cb9dfaa93938cd2e252b1a7809748db99898f48",
+   "bytes": 304854,
+   "lineas": 149
+  },
+  "corpus/LGS/ficha.json": {
+   "sha256": "7346f54091b8b5dd9a0d2b6fb713ef6400d8b1624dbd688856989dbad743a724",
+   "bytes": 674,
+   "lineas": 28
+  },
+  "corpus/LIVA/articulos.jsonl": {
+   "sha256": "1673d303757ec9c8ddbee30d46d08b63c423838adeca5e37f96d128b47f35c0c",
+   "bytes": 196154,
+   "lineas": 85
+  },
+  "corpus/LIVA/decretos.jsonl": {
+   "sha256": "38c988e239cee0767e8b38c3e93346f96242c5d7a406b582a3d90a1afce90539",
+   "bytes": 171953,
+   "lineas": 52
+  },
+  "corpus/LIVA/ficha.json": {
+   "sha256": "01024434b1a6f5d7bb94b1f45ddb30e6a3403f98a4bb9bd30252fd004e3b6101",
+   "bytes": 687,
+   "lineas": 28
+  },
   "corpus/NOM-052-SEMARNAT-2005/articulos.jsonl": {
    "sha256": "589fae72bc9695275aaa13b383929906a3d2a6d6ec93661ce7cbbaae22371786",
    "bytes": 373157,
@@ -71,6 +221,96 @@
    "sha256": "e93d9d8579d6cfad43089d1b7f807891e704db22115b1956eb07b84edc414f09",
    "bytes": 897,
    "lineas": 29
+  },
+  "corpus/Reg_CFF/articulos.jsonl": {
+   "sha256": "86e64d84d653cfd5e421c27c62ba0026d6396bbdba60e8741ac50fcb067e34ea",
+   "bytes": 169819,
+   "lineas": 120
+  },
+  "corpus/Reg_CFF/ficha.json": {
+   "sha256": "689ea915ada02bfbe402101676ca79cbbc26467a65328bad3d0f9b32620e730a",
+   "bytes": 719,
+   "lineas": 28
+  },
+  "corpus/Reg_LAN/articulos.jsonl": {
+   "sha256": "2534153e3b9bfd58506a456181833d5d8c33bde4e492ee91fd397bf1ed0d0828",
+   "bytes": 261824,
+   "lineas": 216
+  },
+  "corpus/Reg_LAN/decretos.jsonl": {
+   "sha256": "71c010e3d9db189c2553558c413170cb44dcf5a6bed7d9e2b5540202318cc1ba",
+   "bytes": 6453,
+   "lineas": 5
+  },
+  "corpus/Reg_LAN/ficha.json": {
+   "sha256": "1ec1cbb9e5abd23390a1880b94292a1078a840d1c12520a604d95420cf5c6707",
+   "bytes": 727,
+   "lineas": 28
+  },
+  "corpus/Reg_LAdua/articulos.jsonl": {
+   "sha256": "5aa483d09c743a254d3f262154c729946bd8b520d9af1064ca5640401623387a",
+   "bytes": 359239,
+   "lineas": 288
+  },
+  "corpus/Reg_LAdua/decretos.jsonl": {
+   "sha256": "85aa118d89f2cd6085b6c1f0ad0236d365055f11ef0cf9d4cb5b0cf1623bacf3",
+   "bytes": 13848,
+   "lineas": 8
+  },
+  "corpus/Reg_LAdua/ficha.json": {
+   "sha256": "5e1a45cac82f255fd369f4371af9f35b6a1d2504659d4f64c19dfd0070aa2ddf",
+   "bytes": 708,
+   "lineas": 28
+  },
+  "corpus/Reg_LFCPrecQuim/articulos.jsonl": {
+   "sha256": "2dc30951c7944fc920a3afe805751654daba6b20544072f3db5bb9eb4c67980d",
+   "bytes": 16080,
+   "lineas": 19
+  },
+  "corpus/Reg_LFCPrecQuim/ficha.json": {
+   "sha256": "b2f52af8081a6b11e03d4e4a093568279079b4e652cef1b17c14329d12d11df4",
+   "bytes": 856,
+   "lineas": 28
+  },
+  "corpus/Reg_LFSA/articulos.jsonl": {
+   "sha256": "4dda75e56f99356e7dc33a34c40395d02aa25f4cc46c0b1b43c971c328ffc70c",
+   "bytes": 415677,
+   "lineas": 381
+  },
+  "corpus/Reg_LFSA/ficha.json": {
+   "sha256": "0bf7c86bdc02113f893df5a8161f50d9ddb2bd8855890219873e2c4376fc1105",
+   "bytes": 721,
+   "lineas": 28
+  },
+  "corpus/Reg_LGEEPA_MRETC/articulos.jsonl": {
+   "sha256": "afb886d2b72ad1634e3e2933301983d87237220ca13d65b089946281a22901ad",
+   "bytes": 41007,
+   "lineas": 39
+  },
+  "corpus/Reg_LGEEPA_MRETC/decretos.jsonl": {
+   "sha256": "f458e6a8fe6e56b4cd2beaa2dfdb4d9db9ef146b790f50d03ff63abe9417af41",
+   "bytes": 2641,
+   "lineas": 1
+  },
+  "corpus/Reg_LGEEPA_MRETC/ficha.json": {
+   "sha256": "24eceec6f63692ef17a18d27822d18ae6518323132f9082eba109fabf48258b5",
+   "bytes": 863,
+   "lineas": 28
+  },
+  "corpus/Reg_LGPC/articulos.jsonl": {
+   "sha256": "d9a9f7c3dd8ed42684979e9228d8bf919ea5a7c1415eb9da17189b4986bb485a",
+   "bytes": 119573,
+   "lineas": 120
+  },
+  "corpus/Reg_LGPC/decretos.jsonl": {
+   "sha256": "a648384bfeff27510d2e6a38e90760fbb5bb85e568f290dfae2096ecc7cd3727",
+   "bytes": 2074,
+   "lineas": 1
+  },
+  "corpus/Reg_LGPC/ficha.json": {
+   "sha256": "2ff19cce084d8ada23330f73ed786237c22be4cc1c64e8bb780f0a26c2786571",
+   "bytes": 738,
+   "lineas": 28
   },
   "corpus/Reg_LGPGIR/articulos.jsonl": {
    "sha256": "ce6406bbd3e16863adc62ccbe941b97906c74b00e97f7af59c0df85c4a4337f7",
@@ -85,6 +325,21 @@
   "corpus/Reg_LGPGIR/ficha.json": {
    "sha256": "ffa3cd389741e6ddd8d3967672b063bb9f84920ef2cc8ad50f006f2a5f6b23c2",
    "bytes": 780,
+   "lineas": 28
+  },
+  "corpus/Reg_LGS_MCSAEPS/articulos.jsonl": {
+   "sha256": "8a26864e8d0641835209ac90f98ef47559b1ba847fad70f68a3d8675c53d0441",
+   "bytes": 682798,
+   "lineas": 1360
+  },
+  "corpus/Reg_LGS_MCSAEPS/decretos.jsonl": {
+   "sha256": "1952bc28b2f6282ef9b9246b1df6bc83952ced0621e2227568d043a7195cc920",
+   "bytes": 11131,
+   "lineas": 3
+  },
+  "corpus/Reg_LGS_MCSAEPS/ficha.json": {
+   "sha256": "df38242610da39ba418f0c1e54f7f156a02f0cf3f0faa2af4e685adf4915770c",
+   "bytes": 840,
    "lineas": 28
   },
   "herramientas/avisos.py": {
@@ -103,14 +358,14 @@
    "lineas": 263
   },
   "herramientas/control.json": {
-   "sha256": "7c0caa96a04d9beec69e834844cdc6e201ef4c5f4dc5ff201df52a26ace02201",
-   "bytes": 1944,
-   "lineas": 67
+   "sha256": "04fc3a16c3e53bca9219696227a2a91f98840322d39adc5ba31b1fb4aa33c5a3",
+   "bytes": 7810,
+   "lineas": 247
   },
   "herramientas/fuentes.json": {
-   "sha256": "b2dc8c15ff138128e379518a756eb13ab057be78f57c7434619130b2b7f2853b",
-   "bytes": 655,
-   "lineas": 8
+   "sha256": "b05e1b75aac6ef1619d7d85f9e9ab6c9529b8ac9af339e29c0e64e82801cd60b",
+   "bytes": 4055,
+   "lineas": 44
   },
   "herramientas/publicar.py": {
    "sha256": "f3e38c3fc9281002eb1f6cd434b3c1cdf8a1900586c07cb74b38294e41a3852d",
@@ -133,9 +388,9 @@
    "lineas": 51
   },
   "pruebas/test_diputados.py": {
-   "sha256": "76743caf1f391783b3596a956425ba35ac40666e0cfd784f2bacbf776e8612ea",
-   "bytes": 4914,
-   "lineas": 106
+   "sha256": "2c19b0b3f396b3dae4eff1d033bb70511d5231e42ea4e08c3b317067866bd1bd",
+   "bytes": 5946,
+   "lineas": 132
   },
   "pruebas/test_vigilante.py": {
    "sha256": "51a679938a73cd51b468dc5111845dbe1099d48bf9275bf30d1abb593572eee0",
@@ -149,8 +404,26 @@
   }
  },
  "normas": [
+  "CFF",
+  "LAN",
+  "LAdua",
+  "LCE",
+  "LFCPQ",
+  "LFSA",
+  "LFT",
+  "LGPC",
   "LGPGIR",
+  "LGS",
+  "LIVA",
   "NOM-052-SEMARNAT-2005",
-  "Reg_LGPGIR"
+  "Reg_CFF",
+  "Reg_LAN",
+  "Reg_LAdua",
+  "Reg_LFCPrecQuim",
+  "Reg_LFSA",
+  "Reg_LGEEPA_MRETC",
+  "Reg_LGPC",
+  "Reg_LGPGIR",
+  "Reg_LGS_MCSAEPS"
  ]
 }

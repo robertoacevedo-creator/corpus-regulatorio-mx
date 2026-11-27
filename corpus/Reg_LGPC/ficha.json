@@ -1,0 +1,28 @@
+{
+ "clave": "Reg_LGPC",
+ "nombre": "REGLAMENTO DE LA LEY GENERAL DE PROTECCIÓN CIVIL",
+ "tipo": "reglamento",
+ "ambito": "federal",
+ "fuente": {
+  "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+  "url": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGPC_091215.doc",
+  "formato": "doc"
+ },
+ "publicacion_original_dof": "2014-05-13",
+ "ultima_reforma_dof": "2015-12-09",
+ "fecha_carga": "2026-11-27",
+ "original": {
+  "archivo": "Reg_LGPC_091215.doc",
+  "sha256": "9eae5ff09b477f7842cdc2f5944b4e0c921ce60bad2ac8a29fd53de7cbcb9462",
+  "bytes": 178688
+ },
+ "convertidor": "diputados_doc",
+ "conteo": {
+  "articulos": 114,
+  "renglones": 0,
+  "registros": 120,
+  "derogados": 0,
+  "transitorios": 6,
+  "decretos": 1
+ }
+}

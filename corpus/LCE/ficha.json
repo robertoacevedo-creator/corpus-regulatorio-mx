@@ -1,0 +1,28 @@
+{
+ "clave": "LCE",
+ "nombre": "LEY DE COMERCIO EXTERIOR",
+ "tipo": "ley",
+ "ambito": "federal",
+ "fuente": {
+  "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+  "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LCE.doc",
+  "formato": "doc"
+ },
+ "publicacion_original_dof": "1993-07-27",
+ "ultima_reforma_dof": "2026-05-01",
+ "fecha_carga": "2026-11-27",
+ "original": {
+  "archivo": "LCE.doc",
+  "sha256": "1cb224946819990ddf188e73d0ab7fbbda103e0b76b565a13dfeed37a54dfd33",
+  "bytes": 201216
+ },
+ "convertidor": "diputados_doc",
+ "conteo": {
+  "articulos": 109,
+  "renglones": 0,
+  "registros": 113,
+  "derogados": 1,
+  "transitorios": 4,
+  "decretos": 7
+ }
+}

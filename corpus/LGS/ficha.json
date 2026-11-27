@@ -1,0 +1,28 @@
+{
+ "clave": "LGS",
+ "nombre": "LEY GENERAL DE SALUD",
+ "tipo": "ley",
+ "ambito": "federal",
+ "fuente": {
+  "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+  "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LGS.doc",
+  "formato": "doc"
+ },
+ "publicacion_original_dof": "1984-02-07",
+ "ultima_reforma_dof": "2026-01-15",
+ "fecha_carga": "2026-11-27",
+ "original": {
+  "archivo": "LGS.doc",
+  "sha256": "130641da82c19e7cb77cd4975d7b7c1855e54831f5113e963c6b54483ef94c0b",
+  "bytes": 1765888
+ },
+ "convertidor": "diputados_doc",
+ "conteo": {
+  "articulos": 733,
+  "renglones": 0,
+  "registros": 740,
+  "derogados": 42,
+  "transitorios": 7,
+  "decretos": 149
+ }
+}

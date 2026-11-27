@@ -1,0 +1,28 @@
+{
+ "clave": "LFCPQ",
+ "nombre": "LEY FEDERAL PARA EL CONTROL DE PRECURSORES QUÍMICOS, PRODUCTOS QUÍMICOS ESENCIALES Y MÁQUINAS PARA ELABORAR CÁPSULAS, TABLETAS Y/O COMPRIMIDOS",
+ "tipo": "ley",
+ "ambito": "federal",
+ "fuente": {
+  "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+  "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LFCPQ.doc",
+  "formato": "doc"
+ },
+ "publicacion_original_dof": "1997-12-26",
+ "ultima_reforma_dof": "2023-05-03",
+ "fecha_carga": "2026-11-27",
+ "original": {
+  "archivo": "LFCPQ.doc",
+  "sha256": "bf0da6040c41f74e27315615f087c1ca6cfcea04c642a511a2e3140b969a6dd9",
+  "bytes": 157696
+ },
+ "convertidor": "diputados_doc",
+ "conteo": {
+  "articulos": 31,
+  "renglones": 0,
+  "registros": 35,
+  "derogados": 0,
+  "transitorios": 4,
+  "decretos": 9
+ }
+}

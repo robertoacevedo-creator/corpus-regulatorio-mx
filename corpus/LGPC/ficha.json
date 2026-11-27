@@ -1,0 +1,28 @@
+{
+ "clave": "LGPC",
+ "nombre": "LEY GENERAL DE PROTECCIÓN CIVIL",
+ "tipo": "ley",
+ "ambito": "federal",
+ "fuente": {
+  "emisor": "Cámara de Diputados, compilación LeyesBiblio",
+  "url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LGPC.doc",
+  "formato": "doc"
+ },
+ "publicacion_original_dof": "2012-06-06",
+ "ultima_reforma_dof": "2023-12-21",
+ "fecha_carga": "2026-11-27",
+ "original": {
+  "archivo": "LGPC.doc",
+  "sha256": "eb7d98ddcaefea003f8bbb8af91cd3f2544f81fbbac4cf4c0d38bde0ab3c53b0",
+  "bytes": 306176
+ },
+ "convertidor": "diputados_doc",
+ "conteo": {
+  "articulos": 94,
+  "renglones": 0,
+  "registros": 107,
+  "derogados": 1,
+  "transitorios": 13,
+  "decretos": 9
+ }
+}
