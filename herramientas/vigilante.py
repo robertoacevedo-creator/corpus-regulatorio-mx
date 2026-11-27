@@ -219,10 +219,12 @@ def comparar(previos, nuevos):
     }
 
 
-def siguiente_version():
-    m = json.loads((RAIZ / "manifest.json").read_text(encoding="utf-8"))
-    n = int(re.sub(r"\D", "", m["version"]) or 1)
-    return f"v{n + 1}"
+def siguiente_version(actual=None):
+    """'v1' o 'v1.1' -> 'v2': cada reforma sube la versión mayor."""
+    if actual is None:
+        actual = json.loads((RAIZ / "manifest.json").read_text(encoding="utf-8"))["version"]
+    m = re.match(r"v(\d+)", actual)
+    return f"v{int(m.group(1)) + 1 if m else 2}"
 
 
 def correr(cmd):

@@ -64,6 +64,8 @@ def main():
     esperar(fd and fd["fecha_indice"] == "2026-09-24" and fd["marcas"] == ["Nueva reforma"], f"Reg_LFDA: {fd}")
     esperar(v.tronco("Reg_LGPGIR_311014.doc") == "Reg_LGPGIR" and v.tronco("LGPGIR.doc") == "LGPGIR", "tronco")
 
+    esperar([v.siguiente_version(x) for x in ("v1", "v1.1", "v9", "v10.2")] == ["v2", "v2", "v10", "v11"], "siguiente_version")
+
     previos = [{"id": "1", "texto": "a", "estado": "vigente", "anotaciones": []},
                {"id": "2", "texto": "b", "estado": "vigente", "anotaciones": []},
                {"id": "3", "texto": "c", "estado": "vigente", "anotaciones": []}]

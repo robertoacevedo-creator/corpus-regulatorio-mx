@@ -118,9 +118,9 @@
    "lineas": 139
   },
   "herramientas/vigilante.py": {
-   "sha256": "436588cd45c6227d049058f2e2df66f8b0febd097f9d6a846db48cd1027e9e15",
-   "bytes": 13491,
-   "lineas": 321
+   "sha256": "a0c4f2f833bc3fda8b29085ec281854765e0dd5929a61735c09e02149464cefd",
+   "bytes": 13627,
+   "lineas": 323
   },
   "pruebas/test_diputados.py": {
    "sha256": "76743caf1f391783b3596a956425ba35ac40666e0cfd784f2bacbf776e8612ea",
@@ -128,9 +128,9 @@
    "lineas": 106
   },
   "pruebas/test_vigilante.py": {
-   "sha256": "93ee41b160ff07f9c2c0bf7e34810227faf0948e6b674495378c355e615452ac",
-   "bytes": 5162,
-   "lineas": 86
+   "sha256": "51a679938a73cd51b468dc5111845dbe1099d48bf9275bf30d1abb593572eee0",
+   "bytes": 5291,
+   "lineas": 88
   },
   "requirements.txt": {
    "sha256": "69505ca0d154285d3931f8005a96c4e45a631cd9a344fa6a9304c711e6c41323",
