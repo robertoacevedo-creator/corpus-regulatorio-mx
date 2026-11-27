@@ -4,6 +4,7 @@ on:
   pull_request:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   validar:
@@ -15,5 +16,7 @@ jobs:
           python-version: "3.12"
       - name: Probar el convertidor de Diputados con casos difíciles
         run: python pruebas/test_diputados.py
+      - name: Probar la lectura de los índices de Diputados
+        run: python pruebas/test_vigilante.py
       - name: Revisar corpus, catálogo, huellas y artículos de control
         run: python herramientas/validar.py

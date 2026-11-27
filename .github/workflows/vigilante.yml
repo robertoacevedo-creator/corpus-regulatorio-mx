@@ -1,0 +1,69 @@
+name: Vigilante semanal
+
+# Cada lunes a las 7:17 de la mañana, hora de la Ciudad de México (13:17 UTC).
+# También se puede correr a mano desde la pestaña Actions con "Run workflow".
+on:
+  schedule:
+    - cron: "17 13 * * 1"
+  workflow_dispatch:
+    inputs:
+      simular:
+        description: "Prueba: claves que se tratan como si hubieran cambiado (por ejemplo LGPGIR). Vacío = revisión normal."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  actions: write
+
+jobs:
+  vigilar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Leer los índices de Diputados
+        env:
+          SIMULAR: ${{ inputs.simular }}
+        run: python herramientas/vigilante.py revisar --salida informe.json ${SIMULAR:+--simular $SIMULAR}
+
+      - name: Decidir si hay algo que revisar
+        id: hay
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          i = json.load(open("informe.json"))
+          print("revisar=" + ("si" if any(x["estado"] in ("revisar", "no_encontrada") for x in i) else "no"))
+          PY
+
+      - name: Instalar LibreOffice y dependencias
+        if: steps.hay.outputs.revisar == 'si'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends libreoffice-writer
+          pip install -q -r requirements.txt
+
+      - name: Bajar, convertir y comparar
+        if: steps.hay.outputs.revisar == 'si'
+        run: python herramientas/vigilante.py actualizar --informe informe.json --originales originales --salida plan.json
+
+      - name: Abrir avisos y pull request
+        if: steps.hay.outputs.revisar == 'si'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python herramientas/avisos.py --informe informe.json --plan plan.json
+
+      - name: Guardar el informe de la corrida
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: informe-vigilante
+          path: |
+            informe.json
+            plan.json
+          if-no-files-found: ignore

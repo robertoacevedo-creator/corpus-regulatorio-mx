@@ -1,30 +1,35 @@
 {
- "version": "v1",
- "fecha": "2026-11-26",
+ "version": "v1.1",
+ "fecha": "2026-11-27",
  "archivos": {
   ".github/workflows/validar.yml": {
-   "sha256": "5403b5702d4557b28d19983a661002cf13d4f248e2de67f710b6c495abb8d1a4",
-   "bytes": 486,
-   "lineas": 19
+   "sha256": "636c1f05efc506e8242e0a4b62ed88c4dfa97024876800372deaef0e84a568d4",
+   "bytes": 614,
+   "lineas": 22
+  },
+  ".github/workflows/vigilante.yml": {
+   "sha256": "074358a62a9ecabd393670ff55f9ed0c82e1f4a5f49445d12bf68f732b047497",
+   "bytes": 2200,
+   "lineas": 69
   },
   ".gitignore": {
-   "sha256": "b7a8b7b0e95501b6f0193ee377784f54165cbcef575bd23756ebc64451126250",
-   "bytes": 152,
-   "lineas": 8
+   "sha256": "ca36d95bef000c1120431c4f6f21cb52c9a6c92728a1ba83b74b966cb5d87ea1",
+   "bytes": 175,
+   "lineas": 10
   },
   "CAMBIOS.md": {
-   "sha256": "3db962b2d6381c10f34cbd5623e2fe0efea613bbf69308c906d464c7c29d2e3d",
-   "bytes": 943,
-   "lineas": 13
+   "sha256": "2806c75f7a098e45c25341320d5d0467a484abfd80423ca6c739e9232a220dc5",
+   "bytes": 1106,
+   "lineas": 17
   },
   "README.md": {
-   "sha256": "36696cd4a7f43e6d75c458757894415c27f4b2c862c15353965ffde8a1e058ba",
-   "bytes": 8903,
-   "lineas": 125
+   "sha256": "b97eef2b3fed2d371378efcf6275df98b4b4892adc7f64631615edbe978daead",
+   "bytes": 10717,
+   "lineas": 141
   },
   "catalogo.json": {
-   "sha256": "79ffafba74ed4b56a764ac265072c42cf56e7575af773bf530c9815402b69060",
-   "bytes": 2639,
+   "sha256": "bfe672ec8a3f25d2eceebcd88ae6b551d7b7aed81c0b19f4483ddc770f606a14",
+   "bytes": 2641,
    "lineas": 91
   },
   "convertidores/comun.py": {
@@ -82,6 +87,11 @@
    "bytes": 780,
    "lineas": 28
   },
+  "herramientas/avisos.py": {
+   "sha256": "6a74bc6962e543ad671682cc8c7025f5410f9a58612b0ecedd5010f4d8bf724b",
+   "bytes": 5979,
+   "lineas": 126
+  },
   "herramientas/cargar.py": {
    "sha256": "d4665252531700f367181ac35302f963ae3f42e74b616e858cd17737894f2de1",
    "bytes": 1667,
@@ -107,10 +117,20 @@
    "bytes": 6838,
    "lineas": 139
   },
+  "herramientas/vigilante.py": {
+   "sha256": "436588cd45c6227d049058f2e2df66f8b0febd097f9d6a846db48cd1027e9e15",
+   "bytes": 13491,
+   "lineas": 321
+  },
   "pruebas/test_diputados.py": {
    "sha256": "76743caf1f391783b3596a956425ba35ac40666e0cfd784f2bacbf776e8612ea",
    "bytes": 4914,
    "lineas": 106
+  },
+  "pruebas/test_vigilante.py": {
+   "sha256": "93ee41b160ff07f9c2c0bf7e34810227faf0948e6b674495378c355e615452ac",
+   "bytes": 5162,
+   "lineas": 86
   },
   "requirements.txt": {
    "sha256": "69505ca0d154285d3931f8005a96c4e45a631cd9a344fa6a9304c711e6c41323",
