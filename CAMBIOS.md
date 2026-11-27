@@ -2,6 +2,10 @@
 
 Las entradas nuevas van arriba.
 
+## v1.2 (27-nov-2026)
+
+- Consulta y verificador de citas (`herramientas/consulta.py`) para la skill de consulta, con su prueba. Sin cambios en el corpus.
+
 ## v1.1 (27-nov-2026)
 
 - Vigilante semanal de las leyes y reglamentos federales (GitHub Actions), con su prueba de lectura de índices. Sin cambios en el corpus.

@@ -1,11 +1,11 @@
 {
- "version": "v1.1",
+ "version": "v1.2",
  "fecha": "2026-11-27",
  "archivos": {
   ".github/workflows/validar.yml": {
-   "sha256": "636c1f05efc506e8242e0a4b62ed88c4dfa97024876800372deaef0e84a568d4",
-   "bytes": 614,
-   "lineas": 22
+   "sha256": "6503879b99d6e4b9c7c0a08c7a1269b16f7032a8e7b69147addf0dea2a2105de",
+   "bytes": 718,
+   "lineas": 24
   },
   ".github/workflows/vigilante.yml": {
    "sha256": "074358a62a9ecabd393670ff55f9ed0c82e1f4a5f49445d12bf68f732b047497",
@@ -18,17 +18,17 @@
    "lineas": 10
   },
   "CAMBIOS.md": {
-   "sha256": "2806c75f7a098e45c25341320d5d0467a484abfd80423ca6c739e9232a220dc5",
-   "bytes": 1106,
-   "lineas": 17
+   "sha256": "4250e0bd12e4d2b8dfaa525e6155c4fb7438a0041426ec859c4a3e1586677812",
+   "bytes": 1261,
+   "lineas": 21
   },
   "README.md": {
-   "sha256": "b97eef2b3fed2d371378efcf6275df98b4b4892adc7f64631615edbe978daead",
-   "bytes": 10717,
-   "lineas": 141
+   "sha256": "7223d1f53b12ab980d6eee6541fb7f34be472396348d48c2f9388a632b1d48ab",
+   "bytes": 11781,
+   "lineas": 156
   },
   "catalogo.json": {
-   "sha256": "bfe672ec8a3f25d2eceebcd88ae6b551d7b7aed81c0b19f4483ddc770f606a14",
+   "sha256": "9fd64d3c3ee4b255d15b78e56d6f2bb4f689baee3e00ee4be42c26eb1ad2df3f",
    "bytes": 2641,
    "lineas": 91
   },
@@ -97,6 +97,11 @@
    "bytes": 1667,
    "lineas": 48
   },
+  "herramientas/consulta.py": {
+   "sha256": "539f4fb289f13dd60d73979cd065ad0388ae469b49ec31be516c5544a5f21c92",
+   "bytes": 11802,
+   "lineas": 263
+  },
   "herramientas/control.json": {
    "sha256": "7c0caa96a04d9beec69e834844cdc6e201ef4c5f4dc5ff201df52a26ace02201",
    "bytes": 1944,
@@ -121,6 +126,11 @@
    "sha256": "a0c4f2f833bc3fda8b29085ec281854765e0dd5929a61735c09e02149464cefd",
    "bytes": 13627,
    "lineas": 323
+  },
+  "pruebas/test_consulta.py": {
+   "sha256": "d9956220074247e74503c8fab5e4542c2c1ee2d5ff78aa8b82e4ca3f22868805",
+   "bytes": 2325,
+   "lineas": 51
   },
   "pruebas/test_diputados.py": {
    "sha256": "76743caf1f391783b3596a956425ba35ac40666e0cfd784f2bacbf776e8612ea",

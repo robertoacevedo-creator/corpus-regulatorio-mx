@@ -34,6 +34,21 @@ Un renglón del Listado 3 de la NOM-052:
  "texto": "1327-53-3 | Arsénico, óxido As2O3 | (Th) | H012", "linea_fuente": 14, "...": "..."}
 ```
 
+### Consulta con verificación de citas
+
+`herramientas/consulta.py` hace lo mismo sin escribir código y verifica citas. Es lo que usa la skill de consulta.
+
+```
+python3 -I herramientas/consulta.py comprobar                                  # huellas y lista de normas
+python3 -I herramientas/consulta.py buscar "gran generador toneladas" --norma LGPGIR
+python3 -I herramientas/consulta.py ver "nom 052" "listado 3 h012"
+python3 -I herramientas/consulta.py remisiones Reg_LGPGIR 35                   # artículos a los que remite
+python3 -I herramientas/consulta.py decretos LGPGIR 5                          # decretos que lo reformaron
+python3 -I herramientas/consulta.py verificar borrador.md                      # coteja cada cita letra por letra
+```
+
+En el borrador, cada cita va marcada como `[[CITA norma=CLAVE id=ID]]texto literal[[/CITA]]`. El verificador la marca VERDE si el texto está tal cual en el registro, o ROJO con el texto real si no, y lista las menciones de artículos sin cita. Normaliza solo espacios, comillas y guiones; nunca palabras.
+
 ## Qué contiene
 
 | Archivo | Qué guarda |
